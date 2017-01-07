@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+}
+
+body {
+    background-image: url(Patterns/footer_lodyas.png)
+    /*background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;*/
+}
+
+#whole_square {
+    width: 800px;
+    margin: 0px auto 50px;
+    text-align: center;
+    border-radius: 10px;
+    transform: 1s all;
+}
+
+#top_of_page { 
+    padding: 30px 0 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 5px 15px #1B1B1B;
+    margin:0;
+    padding: 20px 0 0 0;
+    color: beige;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 5px 15px #1B1B1B;
+    margin: 0 0 0 0;
+    padding: 6px 0;
+    color: beige;
+}
+
+h3 {
+    font-family: 'Poiret One', cursive;
+    border-top: 1px solid beige;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 5px 15px #1B1B1B;
+    margin: 0 0 0 0;
+    padding: 6px 0;
+    color: beige;
+}
+
+#sign_selector {
+    width: 800px;
+    height: 103px;
+    margin: 0 auto;
+    background-image: url(Patterns/notebook.png);
+    background-size: 30%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #1B1B1B;
+    box-sizing: border-box;
+}
+
+.choice_button {
+    font-size: 0px;
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    margin-left: -5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    border: 0;
+    box-sizing: border-box;
+    background-size: 80%;
+    transition: 0.5s all;
+    
+}
+
+.choice_button:hover {
+    font-size: 0px;
+    padding: 0;
+    margin-left: -5px;
+    color: rgba(0, 0, 0, 0);
+    background-color: #A4AB94;
+}
+
+.choice_button:focus {
+    outline: none;
+}
+#buttonChoice {
+    height: 100%;
+    width: 200px;
+    font-size: 0px;
+    background-image: url(UIIcons/rockImg.png);
+}
+
+#computer {
+    display: none;
+}
+
+#rock {
+    background-image: url(UIIcons/rockImg.png);
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#rock:hover {
+    
+}
+
+#paper {
+    background-image: url(UIIcons/paperImg.png);
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#paper:hover {
+}
+
+#scissors {
+    background-image: url(UIIcons/scissorsImg.png);
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scissors:hover {
+}
+
+
+
+/*#middle_part {
+    padding: 10px 0;
+    height: 200px;
+    background-image: url(Patterns/notebook.png);
+    background-size: 30%;
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s;
+}
+
+.chosed_icons {
+    width: 200px;
+    height: 200px;
+}
+
+
+#u_choice {
+    background-image: url(UIIcons/clrImg.png);
+    background-position : 0% 0%;
+    background-size:;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 200px;
+    transition: 0;
+    opacity: 1;
+}
+
+#c_choice {
+    background-image: url(UIIcons/clrImg.png);
+    background-position : 0% 0%;
+    background-size:;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 400px;
+    transition: 0;
+    opacity: 1;
+    transform:scaleX(-1);
+}
+
+#u_choice_icon {
+    background-image: url(UIIcons/userIcoWhite.png);
+    background-color: #1B1B1B;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    box-shadow: 0 0 30px -3px #1B1B1B;
+    transition: 1s all;
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    margin: 20px;
+}
+
+#c_choice_icon {
+    background-image: url(UIIcons/computerIcoWhite.png);
+    background-color: #1B1B1B;
+    background-position: 50% 50%;
+    border-radius: 100%;
+    box-shadow: 0 0 30px -3px #1B1B1B;
+    transition: 1s all;
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    margin: 15px 0 0 610px;
+}*/
+
+#middle_part {
+    padding: 10px 0;
+    display: flex;
+    background-image: url(Patterns/notebook.png);
+    background-size: 30%;
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s;
+}
+
+.chosed_icons {
+    width: 200px;
+    height: 200px;
+}
+
+
+#u_choice {
+    background-image: url(UIIcons/clrImg.png);
+    background-position : 0% 0%;
+    background-size:;
+    background-repeat: no-repeat;
+    transition: 0;
+}
+
+#c_choice {
+    background-image: url(UIIcons/clrImg.png);
+    background-position : 0% 0%;
+    background-size:;
+    background-repeat: no-repeat;
+    transition: 0;
+    transform:scaleX(-1);
+}
+
+#u_choice_icon {
+    background-image: url(UIIcons/userIcoWhite.png);
+    background-color: #1B1B1B;
+    background-position: 50% 50%;
+    background-size: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 30px -3px #1B1B1B;
+    transition: 1s all;
+    height: 170px;
+    width: 170px;
+    margin: 15px 5px 0 25px;
+    
+}
+
+#c_choice_icon {
+    background-image: url(UIIcons/computerIcoWhite.png);
+    background-color: #1B1B1B;
+    background-position: 50% 50%;
+    background-size: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 30px -3px #1B1B1B;
+    transition: 1s all;
+    height: 170px;
+    width: 170px;
+    margin: 15px 25px 0 5px;
+}
+
+
+
+
+#down_part {
+    width: 800px;
+    margin: 0 auto;
+    display: none;
+    opacity: 1;
+    transition: 0.5s all;
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+#results_color {
+    font-family: 'Poiret One', cursive;
+    padding: 10px 0px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #1B1B1B;
+    color: white;
+    font-size: 30px;
+    z-index: -2;
+    box-sizing: border-box;
+    transition: 1s all;
+    display: none;
+}
+
+#results_bar {
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    display: flex;
+}
+
+#results_bar > div {
+    padding: 5px 0 5px;
+}
+
+#wins_table_result {
+    margin: auto;
+}
+
+#ties_table_result {
+    margin: auto;
+}
+
+#loses_table_result {
+    margin: auto;
+}
+
+#wins_bar {
+    background-color: #3D865B;
+    width: 267px;
+    height: 100%;
+    display: flex; 
+    box-shadow: inset 0px 0 0px 0px #1B1B1B;
+    transition: 0.6s all;
+}
+
+#ties_bar {
+    background-color: #3F6284;
+    width: 266px;
+    height: 100%;
+    display: flex; 
+    box-shadow: inset 0px 0 0px 0px #1B1B1B;
+    transition: 0.6s all;
+    
+}
+
+#loses_bar {
+    background-color: #88232C;
+    width: 267px;
+    height: 100%;
+    display: flex;
+    box-shadow: inset 0px 0 0px 0px #1B1B1B;
+    transition: 0.6s all;
+}
+
+
+#result_count {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    text-align: center;
+    background-color: white;
+    width: 800px;
+    height: 74px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #1B1B1B;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: 1s all;
+    overflow: hidden;
+} 
+
+#result_count > p:first-child {
+    font-size: 60px;
+    padding: 2px 0;
+    transition: 1s all;
+}
+
+#result_count > p:nth-child(n+2) {
+    box-shadow: inset  0  2px 14px -4px #1B1B1B;
+    font-size: 25px;
+    padding: 5px 0 5px;
+    transition: 0.3s all;
+}
+
+#clear_bottom {
+    font-family: 'Poiret One', cursive;
+    width: 800px;
+    height: 50px;
+    background-image: url(Patterns/green_cup.png);
+    background-size: 30%;
+    margin: 0 auto;
+    padding: 5px 0;
+    color: #1B1B1B;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    transition: 0.4s all;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 30px -5px #1B1B1B inset;
+    opacity: 1;
+}
+
+#clear_bottom:hover {
+    
+    color: #1b1b1b;
+    font-weight: bolder;
+    box-shadow: 0  5px 5px -5px #1B1B1B inset;
+}
+
+#clear_bottom:disable {
+    color: none;
+}
+
+#copyright {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    bottom: 16px;
+    z-index: -10;
+    color: beige;
+    min-width: 800px;
+    position: fixed;
+}

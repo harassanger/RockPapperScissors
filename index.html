@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROCK PAPPER SCISSORS</title>
+        <link rel="icon" type="image/png" href="Images/apple-icon.png">
+        <link type="text/css" rel="stylesheet" href="rpsStyle.css"/>
+        <link type="text/css" rel="stylesheet" href="rpsAnimation.css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    </head>
+    
+    <body>
+          
+        <div id="top_of_page">
+        <h1>ROCK &nbsp; PAPER &nbsp; SCISSORS</h1>
+        <h2>THE GAME</h2>
+        <h3>CHOOSE BELOW</h3>
+        </div>
+       
+    <div id="whole_square">
+        
+        <div id="sign_selector">
+        <button id="rock" class="choice_button" onclick="selectSign('ROCK')">ROCK</button>
+        <button class="choice_button" id="paper" onclick="selectSign('PAPER')">PAPER</button>
+        <button class="choice_button" id="scissors" onclick="selectSign('SCISSORS')">SCISSORS</button>
+        </div>
+    
+        <div id="middle_part">
+            <!--<table id="table1">   
+                <tr>
+                    <td id="u_choice_icon" class="chosed_icons"></td>
+                    <td  id="u_choice" class="chosed_icons">
+                    <span id="buttonChoice"></span></td>
+                    
+                    <td  id="c_choice" class="chosed_icons">
+                    <span id="computer"></span></td>
+                    <td id="c_choice_icon" class="chosed_icons"></td>
+                </tr>
+            </table>-->
+            <div id="u_choice_icon" class="chosed_icons"><span id="computer"></span></div>
+            <div id="u_choice" class="chosed_icons"><span id="buttonChoice"></span></div>
+            
+            <div id="c_choice" class="chosed_icons"></div>
+            <div id="c_choice_icon" class="chosed_icons"></div>
+        </div>
+        
+        <div id="down_part">        
+        <h4 id="results_color">RESULTS:</h4>   
+        
+            <div id="results_bar">
+             
+                 <div id="wins_bar">
+                     <p id="wins_table_result">0</p>
+                 </div>
+                 
+                 <div id="ties_bar">
+                     <p id="ties_table_result">0</p>
+                 </div>
+                 
+                 <div id="loses_bar">
+                     <p id="loses_table_result">0</p>  
+                 </div>
+             
+             </div>           
+           
+            <div id="result_count" class="">
+            </div>
+           
+        <button id="clear_bottom" onclick="clearF()" class="">CLEAR</button>
+        </div>
+        
+        <h5 id="copyright">&copy; Harassanger 2016</h5>
+    
+    </div>        
+    <script type="text/javascript" src="rpsScript.js"></script>    
+    </body>
+</html>

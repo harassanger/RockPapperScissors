@@ -1,0 +1,85 @@
+.c_choice_ani {
+    animation-name: shake_hand_comp;
+    animation-duration: 1s;
+    transform-origin: 80% 20%;
+    background-image: url(UIIcons/rockImg.png);
+}
+
+@keyframes shake_hand_comp {
+    0% {transform: rotate(0deg); background-position : 0% 0%; background-size: 100%}
+    25% {transform: rotate(20deg); background-position : 80% 20%; background-size: 70%}
+    50% {transform: rotate(0deg); background-position : 80% 20%; background-size: 70%}
+    75% {transform: rotate(20deg); background-position : 0% 0%; background-size: 100%}
+    100% {transform: rotate(0deg); background-position : 0% 0%; background-size: 100%}
+}
+
+.u_choice_ani {
+    animation-name: shake_hand_usr;
+    animation-duration: 1s;
+    transform-origin: 20% 20%;
+    background-image: url(UIIcons/rockImg.png);
+}
+
+@keyframes shake_hand_usr {
+    0% {transform: rotate(0deg); background-position : 0% 0%; background-size: 100%;}
+    25% {transform: rotate(-20deg); background-position : 20% 20%; background-size: 70%;}
+    50% {transform: rotate(0deg); background-position : 20% 20%; background-size: 70%;}
+    75% {transform: rotate(-20deg); background-position : 0% 0%; background-size: 100%;}
+    100% {transform: rotate(0deg); background-position : 0% 0%; background-size: 100%;}
+}
+
+#results_color {
+    animation: resultExpand;
+    animation-duration: 1s
+}
+
+#all_results {
+    animation: resultExpand;
+    animation-duration: 1s
+}
+
+#result_count > p:first-child {
+    animation: resultExpand;
+    animation-duration: 1s;
+}
+
+#clear_bottom {
+    animation: resultExpand;
+    animation-duration: 1s;
+}
+
+@keyframes resultExpand {
+    from {font-size: 0; }
+    to {font-size: 1; }
+}
+
+#result_count > p:nth-child(n+2) {
+    animation: resultShrink;
+    animation-duration: 1s
+}
+
+@keyframes resultShrink {
+    from {font-size: 60px;}
+    to {font-size: 1;}
+}
+
+.list_remove_ani {
+    animation: resultColapse;
+    animation-duration: 0.4s;
+}
+
+@keyframes resultColapse {
+    from {height: auto;}
+    to {height: 340px;}
+}
+
+
+#result_count {
+    animation: resultColapse;
+    animation-duration: 4s;
+}
+
+@keyframes resultColapse {
+    from {height: auto;}
+    to {height: 74px;}
+}

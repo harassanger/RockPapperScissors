@@ -411,8 +411,15 @@ h3 {
     font-family: 'Poiret One', cursive;
     font-size: 18px;
     bottom: 16px;
-    z-index: -10;
     color: beige;
-    min-width: 800px;
     position: fixed;
+    text-align: center;
+    width: 400px;
+    margin-left: 50%;
+    left: -200px;
+    text-decoration: none;
+}
+
+#mobile_view {
+    display: none;
 }

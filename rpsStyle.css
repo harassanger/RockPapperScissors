@@ -7,14 +7,9 @@ html{
 }
 
 body {
-    background-image: url(Patterns/footer_lodyas.png)
-    /*background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;*/
+    background-image: url(Patterns/footer_lodyas.png);
+    position: relative;
+    height: 100vh;
 }
 
 #whole_square {
@@ -408,15 +403,16 @@ h3 {
 }
 
 #copyright {
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+    position: absolute;
+}
+
+#copyright a {
     font-family: 'Poiret One', cursive;
     font-size: 18px;
-    bottom: 16px;
     color: beige;
-    position: fixed;
-    text-align: center;
-    width: 400px;
-    margin-left: 50%;
-    left: -200px;
     text-decoration: none;
 }
 

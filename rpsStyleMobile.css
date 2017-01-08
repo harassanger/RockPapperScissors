@@ -2,15 +2,27 @@
 
 @media only screen and (max-width: 800px) {
 
+    body {
+        height: 100vh;
+        min-height: 263px;
+    }
+    
     #mobile_view {
         display: inherit;
-        height: 100vh;
+        position: inherit;
     }
     
     h1 {
-        padding-top: 25vh;
+        padding: 15vh 0;
         text-shadow: 0 0 20px black;
         font-size: 40px;
+    }
+    
+    hr {
+        width: 250px;
+        margin: 0 auto;
+        border: 1px solid beige;
+        color: beige;
     }
     
     h2 {

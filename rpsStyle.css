@@ -408,6 +408,7 @@ h3 {
     width: 100%;
     bottom: 20px;
     position: absolute;
+    z-index: -1;
 }
 
 #copyright a {
@@ -415,7 +416,6 @@ h3 {
     font-size: 18px;
     color: beige;
     text-decoration: none;
-    z-index: -1;
 }
 
 #mobile_view {

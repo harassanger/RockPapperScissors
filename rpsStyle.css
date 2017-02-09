@@ -415,6 +415,7 @@ h3 {
     font-size: 18px;
     color: beige;
     text-decoration: none;
+    z-index: -1;
 }
 
 #mobile_view {
